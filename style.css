@@ -1,4 +1,3 @@
-/* CSS */
 /* General Reset */
 * {
     margin: 0;
@@ -6,128 +5,174 @@
     box-sizing: border-box;
 }
 
-/* Body and Background */
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
     padding: 20px;
-    line-height: 1.6;
 }
 
-/* Header */
+/* Header Styling */
 header {
-    text-align: center;
-    margin-bottom: 30px;
     background-color: #333;
-    color: #fff;
-    padding: 20px;
-    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #e91e63; /* Pink */
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
 }
 
 header h3 {
-    font-size: 1.2rem;
-    color: #ddd;
+    font-size: 1.2em;
+    margin-top: 0;
 }
 
-/* About Section */
-.about {
-    margin-bottom: 40px;
+nav {
+    margin-top: 20px;
 }
 
-.about h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.about ul {
+nav ul {
     list-style: none;
-    padding-left: 0;
+    display: inline-block;
 }
 
-.about li {
-    margin-bottom: 10px;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.about a {
-    color: #e91e63; /* Pink */
+nav ul li a {
+    color: white;
     text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li.current a {
+    color: #ffb6c1; /* Light Pink for active link */
     font-weight: bold;
 }
 
-.about a:hover {
-    text-decoration: underline;
-}
-
-/* Component Section */
-.component {
-    margin-bottom: 40px;
-}
-
-.component h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+/* Main Content Styling */
+h2, h3 {
     color: #333;
 }
 
-.component p {
-    margin-bottom: 15px;
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    font-size: 1.4em;
+    margin-top: 1em;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
     color: #555;
 }
 
-.component i {
-    font-style: italic;
+ul {
+    list-style: none;
+    padding-left: 20px;
 }
 
-.component object {
-    display: block;
-    margin: 20px auto;
-    width: 100%;
-    max-width: 800px;
-    height: 450px;
-    background-color: #eaeaea;
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
 }
 
-/* Footer */
-footer {
-    text-align: center;
+/* Contact & About Section-Specific Styles*/
+.contact, .about, .resume, .overview {
+    background-color: #ffffff;
+    border-radius: 8px;
     padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact ul, .about p {
+    font-size: 1.1em;
+}
+
+/* Footer Styling */
+footer {
     background-color: #333;
-    color: #fff;
+    color: white;
+    text-align: center;
+    padding: 10px;
     margin-top: 40px;
-    border-radius: 5px;
 }
 
 footer p {
-    font-size: 1rem;
+    font-size: 1em;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header h3 {
-        font-size: 1rem;
-    }
-
-    .about h2, .component h2 {
-        font-size: 1.5rem;
-    }
-
-    .component object {
-        height: 300px;
-    }
+/* Resume PDF */
+.pdf {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
 }
+
+/* Project Section */
+.project {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    color: #333;
+    font-size: 1.8em;
+}
+
+.project ul {
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+.pictures figure {
+    display: inline-block;
+    width: 30%;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.pictures img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.pictures figcaption {
+    font-size: 1em;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Light Pink Highlights */
+a {
+    color: #ffb6c1; /* Light Pink */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff80ab;
+}
+
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Kirsten Arnold - Projects</h1>
+        <h3>Created for MAD 305</h3>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <ul>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+            <ul>
+                <li class="current"><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="overview">
+        <h2>My Projects to Date</h2>
+        <p>This page is just a small snippet of what projets I have done,
+            whittled down to those I am most proud of, while also hopefully
+            showcasing as many of my skills as possible.
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>Project One - CTRL Freak</h3>
+        <p>This project was a group project, completed with three other classmates this semester.
+            Designed as a PC Part Store's Inventory Management System, CTRL Freak is a finished
+            project. The software allows the user to connect to a MariaDB database, and view a list
+            of not only all the software products, but also a table of all their transactions.
+            Products and transactions can easily be created, retrieved, updated, and even deleted.
+            The software is also capable of generating reciepts for transactions, as well as displaying
+            charts that represent the number of products the store offers per brand, as well as some
+            statistics regarding product sales.
+        </p>
+
+        <h4>Skills Showcased:</h4>
+        <ul>
+            <li>100% written in Java</li>
+            <li>Database design and administration</li>
+            <li>CRUD Operations</li>
+            <li>Working in a team setting</li>
+        </ul>
+
+        <div class="pictures">
+            <figure>
+                <img src="images/cf_main.png" alt="A blue screen with a table view and a form.">
+                <figcaption>The table view for the 'products' database table. Also includes the update/delete form.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/cf_reciept.png" alt="A blue screen with a table view, a reciept, and a form.">
+                <figcaption>The table view for the 'transactions' database table. Also includes the update/delete form.
+                    An example of the reciept generated is pictured on the right.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/db_schema.png" alt="A database schema.">
+                <figcaption>Diagram of our database design.</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Project Two - Angular Framework</h3>
+        <p>This project has been an ongoing process over the last four months. Built incrementally in my course on Angular Frameworks,
+            I have built a simple single page application that manages a catalog of books. The website supports CRUD operations on the books.
+            Throughout this project, I have become familar with the following Angular concepts: Directives, HTTP Requests, Material Design,
+            Pipes, Progressive Web Applications, and Services. 
+        </p>
+
+        <h4>Skills Showcased:</h4>
+        <ul>
+            <li>Web development basics</li>
+            <li>Use of a framework</li>
+            <li>CRUD operations</li>
+            <li>TypeScript Coding</li>
+        </ul>
+
+        <div class="pictures">
+            <figure>
+                <img src="images/angular_home.png" alt="A white screen with a list of books and their information.">
+                <figcaption>The main screen of the application. Each book is its own component, displayed dynamically.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/angular_form.png" alt="A white screen with a simple form, and a button to 'update' or 'delete'">
+                <figcaption>The component used to modify/delete a book.</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Project Three - ECommerce Platform</h3>
+        <p>This is another project that I created incrementally throughout the semester. This project did involve some files such as
+            the CSS being provided for us, as it was irrelevant to the course, which was focused on intermediate-level PHP techniques.
+            The site is effectively a fully-functioning ecommerce auction platform. It connects to a backend database to manage items, bids,
+            users, and payment reciepts. The site connects to the PayPal Sandbox API, but could easily be adapted to use the live API, and
+            serve as a real ecommerce platform. Winning bidders and item owners are both emailed when the auction ends.
+        </p>
+
+        <h4>Skills Showcased:</h4>
+        <ul>
+            <li>Intermediate-level PHP</li>
+            <li>Database access using PDO</li>
+            <li>Connecting to the PayPal API</li>
+            <li>Object-Oriented development.</li>
+        </ul>
+
+        <div class="pictures">
+            <figure>
+                <img src="images/auction_home.png" alt="A white screen with a simple table of items.">
+                <figcaption>The main home screen, featuring the table of all items currently available for auction.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/auction_item.png" alt="A white screen with an item's details, and the option to bid.">
+                <figcaption>The 'item details' page, where users can bid on items until the auction expires.</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy;Kirsten Arnold, 2024 - MAD 503</p>
+    </footer>
+</body>
+</html>
